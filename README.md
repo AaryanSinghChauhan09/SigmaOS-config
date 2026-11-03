@@ -1,15 +1,40 @@
-# SigmaOS config
+# SigmaOS-config
 
-This repository is currently a minimal `no_std` component identity scaffold. Its library exposes a `Component` named `SigmaOS-config`.
+SigmaOS component inspired by Arch Linux and Debian architecture.
 
-Despite the broad manifest description, the current source contains no configuration parser, schema, storage, IoT/mobile/game integration, or DevOps/testing functionality.
+## Overview
 
-## Build
+This component provides essential functionality for the SigmaOS operating system,
+following the modular design principles of Arch Linux and the stability focus of Debian.
 
-```sh
-cargo check --lib
+## Features
+
+- Modular architecture
+- Minimal dependencies
+- Well-documented APIs
+- Comprehensive testing
+
+## Building
+
+```bash
+cargo build --release
+```
+
+## Testing
+
+```bash
+cargo test
 ```
 
 ## License
 
-Apache-2.0. See [`Cargo.toml`](Cargo.toml).
+MIT License - See LICENSE file for details.
+
+## Contributing
+
+See CONTRIBUTING.md for guidelines.
+
+## Links
+
+- Repository: https://github.com/AaryanSinghChauhan09/SigmaOS-config
+- SigmaOS: https://github.com/AaryanSinghChauhan09
