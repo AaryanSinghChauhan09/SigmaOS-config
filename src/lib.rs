@@ -1,31 +1,25 @@
-// SPDX-License-Identifier: Apache-2.0
-//! SigmaOS-config - IoT/Mobile/Game/DevOps/Testing component
-//! Part of SigmaOS multi-repository architecture
-
-#![no_std]
-
-/// Component
-pub struct Component {
-    name: &'static str,
+#[derive(Debug, Clone)]
+pub struct UserConfig {
+    pub theme_name: String,
+    pub font_size: u8,
 }
 
-impl Component {
-    pub fn new() -> Self {
-        Self { name: "SigmaOS-config" }
-    }
+impl Default for UserConfig {
+    fn default() -> Self { Self { theme_name: "sigma-dark".into(), font_size: 11 } }
 }
 
-impl Default for Component {
-    fn default() -> Self {
-        Self::new()
-    }
+pub struct ConfigManager;
+impl ConfigManager {
+    pub fn get_default_config_path() -> &'static str { "~/.config/sigmaos/config.toml" }
 }
 
 #[cfg(test)]
 mod tests {
+    use super::*;
     #[test]
-    fn test_creation() {
-        let c = super::Component::new();
-        assert_eq!(c.name, "SigmaOS-config");
+    fn test_config_defaults() {
+        let cfg = UserConfig::default();
+        assert_eq!(cfg.theme_name, "sigma-dark");
+        assert_eq!(ConfigManager::get_default_config_path(), "~/.config/sigmaos/config.toml");
     }
 }

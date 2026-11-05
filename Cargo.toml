@@ -1,10 +1,9 @@
 [package]
-name = "SigmaOS-config"
+name = "sigmaos_config"
 version = "0.1.0"
 edition = "2021"
-license = "Apache-2.0"
-description = "SigmaOS SigmaOS-config component - Inspired by Arch Linux and Debian"
+description = "Declarative user configuration schemas, dotfile conventions, and theme engine in ~/.config/sigmaos"
 
 [lib]
-name = "config"
+name = "sigmaos_config"
 path = "src/lib.rs"
