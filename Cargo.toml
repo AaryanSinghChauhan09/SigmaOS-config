@@ -2,7 +2,8 @@
 name = "sigmaos_config"
 version = "0.1.0"
 edition = "2021"
-description = "Declarative user configuration schemas, dotfile conventions, and theme engine in ~/.config/sigmaos"
+license = "MIT"
+description = "SigmaOS config component inspired by Linux Mint / Omarchy / Arch Linux."
 
 [lib]
 name = "sigmaos_config"
