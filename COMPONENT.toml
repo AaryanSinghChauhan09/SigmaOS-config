@@ -3,12 +3,12 @@ name = "SigmaOS-config"
 tier = 3
 stability = "scaffold"
 language = "rust"
-description = "Declarative user configuration schemas, dotfile conventions, and theme engine in ~/.config/sigmaos"
+description = "Versioned configuration schemas, profiles, defaults, themes, and migrations"
 upstream = ["https://github.com/omacom/omadots"]
 
 [contract]
 provides = ["config-schema-engine", "dotfile-manager", "theme-switcher"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
