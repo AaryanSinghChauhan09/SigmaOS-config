@@ -1,7 +1,7 @@
 [component]
 name = "SigmaOS-config"
 tier = 3
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "Versioned configuration schemas, profiles, defaults, themes, and migrations"
 upstream = ["https://github.com/omacom/omadots"]
@@ -11,6 +11,6 @@ provides = ["config-schema-engine", "dotfile-manager", "theme-switcher"]
 depends_on = ["SigmaOS-system"]
 
 [maturity]
-status = "Scaffold"
+status = "Implemented"
 test_evidence = "Compiles and passes AAA unit tests"
 next_milestone = "Hardware and runtime integration"
