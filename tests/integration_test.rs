@@ -1,10 +1,10 @@
-// Integration test for SigmaOS-config
-// Verifies the crate builds and links as a dependency.
-#![allow(unused_imports)]
+//! Integration tests for SigmaOS-config.
 
-use sigmaos_config as _;
+use sigmaos_config_lib::{Component, ComponentLifecycle};
 
 #[test]
-fn crate_links_and_runs() {
-    assert_eq!(2 + 2, 4);
+fn component_initialises_and_runs() {
+    let mut c = Component::new();
+    c.init().expect("init should succeed");
+    c.run().expect("run should succeed after init");
 }
