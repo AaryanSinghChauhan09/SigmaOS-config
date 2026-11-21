@@ -445,3 +445,12 @@ mod tests {
         );
     }
 }
+
+/// Module extracted from the SigmaOS-system monolith.
+pub mod sigmaenvironmentmanager;
+
+/// Module extracted from the SigmaOS-system monolith.
+pub mod sigmapathmanager;
+
+/// Module extracted from the SigmaOS-system monolith.
+pub mod sigmatemplatemanager;
