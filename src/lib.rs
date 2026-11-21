@@ -7,6 +7,7 @@
 #![warn(missing_docs)]
 
 /// Errors raised by this component.
+pub mod sigmaconfig;
 pub mod sigmaconfigmanager;
 #[derive(Debug, thiserror::Error)]
 pub enum ComponentError {
